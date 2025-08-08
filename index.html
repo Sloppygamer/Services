@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Image Fetcher & Slideshow</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-left">
+            <button id="menuToggleBtn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <span class="site-title">I</span>
+        </div>
+
+        <div class="navbar-right">
+            <button id="prevBtn" aria-label="Previous image">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <button id="nextBtn" aria-label="Next image">
+                <i class="fas fa-arrow-right"></i>
+            </button>
+            <button id="slideToggleBtn" aria-label="Toggle slideshow">
+                <i class="fas fa-play"></i></button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="left-panel">
+            <div class="image-display">
+                <img id="displayImage" src="" alt="Fetched image" />
+            </div>
+        </div>
+
+        <aside class="right-panel hidden" id="quickAccessPanel">
+            <!-- Quick access menu generated here -->
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
